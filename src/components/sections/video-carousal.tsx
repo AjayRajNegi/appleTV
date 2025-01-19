@@ -14,7 +14,7 @@ import {
 import { useMemo, useRef, useState } from "react";
 import { useWindowSize } from "react-use";
 
-export const VideoCarousel = () => {
+export const VideoCarousal = () => {
   const { width, height } = useWindowSize();
   const carouselWrapperRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -130,7 +130,7 @@ export const VideoCarousel = () => {
 const SmallVideoCarousel = ({ movies }: { movies: Movie[] }) => {
   return (
     <div className="overflow-clip">
-      <div className="animate-carousel-move relative left-[var(--carousel-offset,0px)] flex gap-3">
+      <div className="relative left-[var(--carousel-offset,0px)] flex animate-carousel-move gap-3">
         {movies.map((movie, index) => (
           <div
             className="aspect-video w-[40vw] shrink-0 md:w-[23vw]"

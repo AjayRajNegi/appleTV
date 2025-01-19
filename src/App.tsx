@@ -1,9 +1,7 @@
-import { Button } from "./components/button";
-import { Container } from "./components/container";
 import { Header } from "./components/header";
-import { Hero } from "./components/section/hero";
-import { Usps } from "./components/section/usps";
-import { VideoCarousel } from "./components/section/video-carousel";
+import { Hero } from "./components/sections/hero";
+import { Usps } from "./components/sections/usps";
+import { VideoCarousal } from "./components/sections/video-carousal";
 import "./styles.css";
 
 function App() {
@@ -11,12 +9,12 @@ function App() {
     <>
       <Header />
       <main>
-        <div className="bg-background relative z-10">
+        <div className="bg-background">
           <Hero />
           <Usps />
         </div>
-        <VideoCarousel />
-        <div className="h-[300vh]" />
+        <VideoCarousal />
+        <div className="h-[300vh]"></div>
       </main>
     </>
   );
